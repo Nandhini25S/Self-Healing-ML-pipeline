@@ -2,7 +2,7 @@
 It's a self-healing ML pipeline
 
 
-
+```
 ┌─────────────────────────────────────────────────────────────┐
 │                    python stage0.py                         │
 └───────────────────────────┬─────────────────────────────────┘
@@ -34,6 +34,7 @@ It's a self-healing ML pipeline
 │  • Computes accuracy, precision, recall, F1, ROC-AUC        │
 │  • Saves model, preprocessor, and baseline metrics          │
 └─────────────────────────────────────────────────────────────┘
+```
 
 Train a model → Save everything → Serve predictions via API → Log for monitoring.
 
