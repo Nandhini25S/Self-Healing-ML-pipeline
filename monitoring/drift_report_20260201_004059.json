@@ -1,0 +1,92 @@
+{
+  "timestamp": "2026-02-01T00:40:59.125319",
+  "status": "DEGRADED",
+  "n_samples_analyzed": 2,
+  "thresholds": {
+    "feature_drift_threshold": 3.0,
+    "prediction_drift_threshold": 0.1
+  },
+  "summary": {
+    "n_drifted_features": 6,
+    "drifted_features": [
+      "age",
+      "pdays",
+      "cons.price.idx",
+      "cons.conf.idx",
+      "euribor3m",
+      "nr.employed"
+    ],
+    "prediction_drifted": false
+  },
+  "feature_drift": {
+    "age": {
+      "baseline_mean": 0.003104239456084185,
+      "baseline_std": 0.9918382286030675,
+      "current_mean": 30.0,
+      "relative_change": 30.2437,
+      "is_drifted": true
+    },
+    "campaign": {
+      "baseline_mean": 0.07370799552042667,
+      "baseline_std": 1.0659578499380398,
+      "current_mean": 1.0,
+      "relative_change": 0.869,
+      "is_drifted": false
+    },
+    "pdays": {
+      "baseline_mean": 0.050399620266533364,
+      "baseline_std": 0.870387463340272,
+      "current_mean": 999.0,
+      "relative_change": 1147.7068,
+      "is_drifted": true
+    },
+    "previous": {
+      "baseline_mean": -0.08551335984474599,
+      "baseline_std": 0.8985219917094126,
+      "current_mean": 0.0,
+      "relative_change": 0.0952,
+      "is_drifted": false
+    },
+    "emp.var.rate": {
+      "baseline_mean": 0.03446287006328922,
+      "baseline_std": 0.9871589509475673,
+      "current_mean": 1.1,
+      "relative_change": 1.0794,
+      "is_drifted": false
+    },
+    "cons.price.idx": {
+      "baseline_mean": 0.030360121695823496,
+      "baseline_std": 0.9776091163640754,
+      "current_mean": 93.994,
+      "relative_change": 96.1158,
+      "is_drifted": true
+    },
+    "cons.conf.idx": {
+      "baseline_mean": -0.0769098698945614,
+      "baseline_std": 0.9637402133058054,
+      "current_mean": -36.4,
+      "relative_change": 37.6897,
+      "is_drifted": true
+    },
+    "euribor3m": {
+      "baseline_mean": 0.022078556176667086,
+      "baseline_std": 0.9931387708938747,
+      "current_mean": 4.857,
+      "relative_change": 4.8683,
+      "is_drifted": true
+    },
+    "nr.employed": {
+      "baseline_mean": 0.03968505339298599,
+      "baseline_std": 0.9659523437399993,
+      "current_mean": 5191.0,
+      "relative_change": 5373.93,
+      "is_drifted": true
+    }
+  },
+  "prediction_drift": {
+    "baseline_mean": 0.3877,
+    "current_mean": 0.4217,
+    "prediction_shift": 0.034,
+    "is_drifted": false
+  }
+}
